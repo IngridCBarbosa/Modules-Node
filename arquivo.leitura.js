@@ -4,7 +4,9 @@ const fs = require('fs') // módulo préviamente instalado
 const caminho = __dirname + '/arquivo.json'
 
 // sincrono...
-
+/* Não é muito recomendado, pois primeiro lê todo o arquivo 
+    para depois ser utilizado
+*/
 const conteudo = fs.readFileSync(caminho, 'utf-8')
 console.log(conteudo)
 
